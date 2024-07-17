@@ -1,0 +1,145 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primaryh1-color: #ac8ee9;
+  --mdh2-color: #bfc7d2;
+  --red-color:#eb6f92;
+  --main-bbg-color: #171f2b;
+  --stroke-color:#2E3C51;
+  --text-color-paragraph: ##808A97;
+}
+
+/* --buttons */
+.primarybtn {
+  @apply
+  bg-primarybt
+  text-txtprimarybt
+  rounded-lg
+  p-2
+}
+.secondbtn{
+  @apply
+  border
+  border-strokeline
+  p-2
+  rounded-lg
+
+}
+
+/* cards */
+.card_lstyle {
+  @apply
+  bg-second
+  w-full
+  h-full
+  rounded-2xl
+  border
+  border-strokeline
+  text-white
+}
+
+.card_shadow {
+  @apply
+  shadow-[0_20px_50px_rgba(8,_112,_184,_0.3)]
+}
+
+.card_shadow2 {
+  @apply
+  shadow-[0_20px_50px_rgba(8,_146,_127,_0.3)]
+}
+
+ /* fieds input  */
+.input_style{
+  @apply
+  bg-bg_second
+  border
+  border-strokeline
+  text-h2secondary
+  text-sm
+  rounded-lg
+  focus:outline-none
+  focus:ring-primaryh1help
+  focus:border-blue-500
+  block w-full p-2.5
+
+}
+
+.second_button_style {
+  @apply
+  bg-secondbtn
+  p-2
+  rounded-lg
+}
+
+.icons_style {
+  @apply
+  text-secondbtn
+}
+
+.search_input {
+ @apply
+  text-h2secondary
+  text-center
+  w-36
+  bg-bg_second
+  p-2
+  text-sm
+  rounded-lg
+  md:w-72
+  border
+  border-main
+  focus:outline-none
+  focus:border-primarybt
+  hover:border-primaryh1help
+
+
+}
+
+.h_divider {
+  @apply
+  my-7
+  h-px
+  border-t-0
+  bg-transparent
+  bg-gradient-to-r
+  from-transparent
+  via-neutral-500
+  to-transparent
+  opacity-25
+  z-10
+}
+
+.iconbtn {
+  @apply
+  border
+  bg-second
+  border-strokeline
+  rounded-lg
+  p-2
+
+}
+
+/* fields styles */
+.field_msg_required {
+  color:var(--red-color) ;
+  font-size:0.80rem;
+  /* background: #fff; */
+  text-align: left;
+  margin-top: -1rem;
+}
+
+.placeholder-red::placeholder {
+  color:var(--red-color) ;
+}
+
+.is-invalid {
+  border-color: var(--red-color);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
